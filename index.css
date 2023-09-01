@@ -1,0 +1,402 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body , html{
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.container{
+    width: 100%;
+    justify-content:space-between;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+}
+.header{
+    height: 50px;
+    padding: 5px;
+}
+.header img{
+    height: 40px;
+}
+.mainDiv{
+    position: relative;
+    background: linear-gradient(134deg,rgba(0, 0, 255, 0.46),white);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 230px;
+}
+.imageWala img{
+    width: 250px;
+    margin-left: 15%;
+}
+.textWala{
+    width: 100%;
+    padding-right: 25px;
+}
+.welcomeText{
+    color: rgba(0, 0, 0, 0.581);
+    text-align: start;
+}
+.textAndDimWala{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.convertText{
+    font-size: 1.7rem;
+    width: 120%;
+    margin-top: 15px;
+    text-align: start;
+    font-weight: 800;
+}
+.dim{
+    height: 100px;
+    width: 100px;
+    border-radius: 73% 27% 59% 41% / 52% 27% 73% 48% ;
+    background: linear-gradient(200deg,rgba(0, 0, 255, 0.22),white);
+    position: relative;
+    left: 150px;
+    bottom: 75px;
+    transform: rotate(90deg);
+    opacity: 35%;
+}
+
+
+/* settingAndBoxes */
+
+.settingAndBoxes{
+    height: 180px;
+    width: 100%;
+    background-color: rgba(255,250,243);
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 10px;
+}
+
+/* areas */
+ .leftArea{
+    text-align: start;
+ }
+ .leftArea #inputBox {
+    background-color: #bd9f9f36;
+ }
+ .leftText{
+    height: 29px;
+    font-size: 1.2rem;
+    font-weight: 700;
+ }
+ .rightArea{
+    text-align: end;
+ }
+ textarea{
+    border: rgba(0, 0, 0, 0.226) 0.3px solid ;
+    resize: none;
+    width: 350px;
+    height: 120px;
+    margin-top: 10px;
+    outline: none;
+ }
+ textarea::placeholder{
+    text-align: center;
+    line-height: 100px;
+    
+ }
+
+.rightText img{
+    width: 25px;
+    padding: 3px;
+    outline: rgba(0, 0, 0, 0.426) solid 0.5px;
+}
+
+
+/* SECONDFOOTER */
+
+
+.secondFooter{
+    display: flex;
+    height: 130px;
+    align-items: center;
+    background-color: rgba(255,250,243);
+    justify-content: center;
+}
+.useThis{
+    font-size: 1.2rem;
+    text-align: end;
+    font-weight: 800;
+}
+
+.lists{
+    text-align: start;
+    border: 2px solid transparent;
+    border-left: 2px solid black;
+    padding-left: 25px;
+    margin-left: 25px;
+}
+.lists li{
+    list-style-type: none;
+}
+
+
+/* footer */
+
+.footer{
+    background-color: rgba(0, 0, 255, 0.378);
+    height: 30px;
+    position: relative;
+    bottom: 0px;
+    text-align: center;
+    align-items: center;
+    line-height: 30px;
+    margin-top: 10px;
+    font-size: 0.7rem;
+    text-transform: capitalize;
+}
+
+
+/* MEDIAs */
+@media (min-width:670px) and (max-width:860px)  {
+   .textAndDimWala{
+    justify-content: center;
+    align-items: center;
+   }
+   .mainDiv{
+    justify-content: center;
+    align-self: center;
+    width: 100%;
+   }
+   .imageWala img{
+    width: 250px;
+    margin-left: 0%;
+    }
+    .textWala{
+        margin-left: 5%;
+    }
+    .leftText{
+        height: 29px;
+        font-size: 1rem;
+        font-weight: 600;
+        width: 130%;
+     }
+     textarea{
+        border: rgba(0, 0, 0, 0.226) 0.3px solid ;
+        resize: none;
+        width: 280px;
+        height: 100px;
+        margin-top: 10px;
+        outline: none;
+     }
+     textarea::placeholder{
+        text-align: center;
+        line-height: 90px;
+        font-size: 0.7rem;
+     }
+     .leftArea{
+        margin-left: 6%;
+     }
+     .rightArea{
+        margin-right: 4%;
+     }
+     .useThis{
+        font-size: 1rem;
+        width: 45%;
+    }
+    .lists{
+        font-size: 0.7rem;
+    }
+}
+
+@media (min-width:550px) and (max-width:669px)  {
+    .imageWala img{
+     width: 200px;
+     margin-left: 5%;
+     }
+     .textWala{
+         margin-left: 10%;
+         margin-top: 5%;
+     }
+     .convertText{
+        font-size: 1rem;
+     }
+     .leftText{
+         height: 29px;
+         font-size: 0.8rem;
+         font-weight: 600;
+         width: 130%;
+      }
+      textarea{
+         border: rgba(0, 0, 0, 0.226) 0.3px solid ;
+         resize: none;
+         width: 220px;
+         height: 90px;
+         margin-top: 10px;
+         outline: none;
+      }
+      textarea::placeholder{
+         text-align: center;
+         line-height: 80px;
+         font-size: 0.6rem;
+      }
+      .leftArea{
+         margin-left: 6%;
+      }
+      .rightArea{
+         margin-right: 6%;
+      }
+      .useThis{
+         font-size: 0.8rem;
+         width: 45%;
+     }
+     .lists{
+         font-size: 0.6rem;
+     }
+ }
+
+ @media (min-width:465px) and (max-width:549px) {
+    .imageWala img{
+        width: 200px;
+        margin-left: 5%;
+        }
+        .textWala{
+            margin-left: 10%;
+            margin-top: 5%;
+            width: 250%;
+        }
+        .welcomeText{
+            width: 200%;
+        }
+        .convertText{
+           font-size: 1rem;
+        }
+        .leftText{
+            height: 29px;
+            font-size: 0.7rem;
+            font-weight: 600;
+            width: 150%;
+         }
+         textarea{
+            border: rgba(0, 0, 0, 0.226) 0.3px solid ;
+            resize: none;
+            width: 200px;
+            height: 80px;
+            margin-top: 20px;
+            outline: none;
+         }
+         textarea::placeholder{
+            text-align: center;
+            line-height: 70px;
+            font-size: 0.5rem;
+         }
+         .leftArea{
+            margin-left: 6%;
+         }
+         .rightArea{
+            margin-right: 6%;
+         }
+         .useThis{
+            font-size: 0.7rem;
+            width: 50%
+        }
+        .lists{
+            font-size: 0.5rem;
+            margin-left: 2%;
+        }
+ }
+
+ @media   (max-width:465px) {
+    .imageWala img{
+        width: 170px;
+        margin-left: 5%;
+        margin-top:10%;
+        }
+        .mainDiv{
+            flex-direction: column;
+        }
+        .textWala{
+            margin-left: 20%;
+            width: 250%;
+        }
+        .welcomeText{
+            width: 200%;
+            font-size: 0.7rem;
+            margin-left: 10%;
+        }
+        .convertText{
+           font-size: 1rem;
+           margin-top: 2%;
+        }
+        .settingAndBoxes{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 230px;
+        }
+        .leftArea{
+            text-align: center;
+            margin-left: 0%;
+            margin-right: 15%;
+
+         }
+         .rightArea{
+            text-align: center;
+            
+         }
+         .rightArea #outputBox {
+            position: relative;
+            bottom: 25px;
+         }
+         .rightText img{
+            position: relative;
+            left: 150px;
+            bottom: 115px;
+            width: 18px;
+         }
+        .leftText{
+            height: 20px;
+            font-size: 0.7rem;
+            font-weight: 600;
+            width: 100%;
+            text-align: start;
+            margin-top: 20px;
+         }
+         .leftBox{
+            margin-top: 0px;
+            margin-left: 20%;
+         }
+         textarea{
+            border: rgba(0, 0, 0, 0.226) 0.3px solid ;
+            resize: none;
+            width: 200px;
+            height: 80px;
+            outline: none;
+         }
+         textarea::placeholder{
+            text-align: center;
+            line-height: 70px;
+            font-size: 0.5rem;
+         }
+         .secondFooter{
+            height: 70px;
+         }
+         .useThis{
+            font-size: 0.7rem;
+            width: 50%
+        }
+        .lists{
+            font-size: 0.5rem;
+            margin-left: 2%;
+        }
+        .useThis{
+            font-size: 0.6rem;
+        }
+        .lists{
+            padding-left: 5px;
+            width: 70%;
+        }
+    }
